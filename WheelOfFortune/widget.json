@@ -14,6 +14,11 @@
     "label": "Segment colors, comma separated",
     "value": "#ff0000,#00ff00,#ffffff,#123123,#421221"
   },
+  "segmentTextColors": {
+    "type": "text",
+    "label": "Segment Text colors, comma separated",
+    "value": "#fff,#000,#000,#fff,#fff"
+  },
   "displayImage": {
     "type": "checkbox",
     "label": "Display Image",

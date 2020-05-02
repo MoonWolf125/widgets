@@ -78,8 +78,9 @@ window.addEventListener('onWidgetLoad', function (obj) {
     spins = fieldData['spins'];
     let tmpsegments = fieldData.segments.replace(" ", "").split(",");
     let tmpcolors = fieldData.segmentColors.toLowerCase().replace(" ", "").split(",");
+  	let tmpsegmenttextcolors = fieldData.segmentTextColors.replace(" ", "").split(",");
     for (let i in fieldData.segments.replace(" ", "").split(",")) {
-        segments.push({'text': tmpsegments[i], 'fillStyle': tmpcolors[i]});
+        segments.push({'text': tmpsegments[i], 'fillStyle': tmpcolors[i], 'textFillStyle': tmpsegmenttextcolors[i]});
     }
     if (fieldData.displayImage) {
         theWheel = new Winwheel({
@@ -145,5 +146,4 @@ function startSpin() {
         wheelSpinning = true;
     }
 }
-
 
