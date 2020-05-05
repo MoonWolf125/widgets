@@ -18,5 +18,5 @@ window.addEventListener('onWidgetLoad', function(obj) {
 });
 
 function getRandom(array) {
-    return array[Math.floor(Math.random() * array.length)];
+    return array[Math.floor(Math.random() * (array.length + 1))];
 }
